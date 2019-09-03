@@ -37,6 +37,9 @@ const form = {
     display: "flex",
     minHeight:"100vh",
 };
+const title = {
+    textAlign: 'center',
+};
 /*
 Форма входу (/ login) приймає "фейковий" дані:
 
@@ -100,7 +103,7 @@ class Form extends React.Component {
             <div style={container}>
                 {this.renderRedirect()}
                 <form  autoComplete="off" style={form} onSubmit={this.onSubmited}>
-                    <Typography variant="h4" >
+                    <Typography variant="h4" style={title}>
                         Login to your Profile
                     </Typography>
 
